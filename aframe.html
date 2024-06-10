@@ -6,10 +6,46 @@
   </head>
   <body>
 
+    <a-scene antilias="true" fog="type: linear; color: #000000; near: 10; far: 50" >
+    
+      <a-sky color="#000"></a-sky>
+
+      <a-box 
+        position="-5 0 -5" 
+        height="1" 
+        width="1" 
+        depth="1" 
+        color="red" 
+        shadow="cast: true">
+      </a-box>
+
+      <a-box id="peter"
+        position="5 0 -5" 
+        height="1" 
+        width="1" 
+        depth="1" 
+        color="orange" 
+        shadow="cast: true">
+      </a-box>
+
+      <a-box position="0 -1 0" height="1" width="100" depth="100" color="gray" shadow="cast: true">
+    </a-box>
+
+    <a-light type="point" light="castShadow:true;shadowCameraVisible: true;" position="10 10 -10" intensity="1"></a-light>
+
+    <a-light type="point" light="castShadow:false;shadowCameraVisible: true;" position="-10 10 10" intensity="0.4"></a-light>
+
+    <!-- <a-entity light="type: directional" position="10 10 -10" target="#peter"></a-entity> -->
+
+
+     </a-scene> 
+      
+
+
+
 
       
-      
-      
+  <!--    
 <a-scene antilias="true" fog="type: linear; color: #000; near: 8; far: 40" >
 
   
@@ -43,7 +79,7 @@
 
     </a-scene>
 
-
+-->
 
 
 
