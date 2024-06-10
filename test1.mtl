@@ -1,0 +1,17 @@
+newmtl Kartenmaterial Layer Stack
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 1
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm test1/Kartenmaterial Layer Stack_metallic.png
+adobe_map_translucence test1/Kartenmaterial Layer Stack_translucence.png
+map_Pr test1/Kartenmaterial Layer Stack_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd test1/Kartenmaterial Layer Stack_baseColor.png

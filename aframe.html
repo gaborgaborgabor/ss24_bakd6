@@ -10,20 +10,20 @@
     <a-scene antilias="true"  >
 
         <a-assets>
-          <a-asset-item id="car-obj" src="Unbenannt.obj"></a-asset-item>
-          <a-asset-item id="car-mtl" src="Unbenannt.mtl"></a-asset-item>
+          <a-asset-item id="schild1-obj" src="test1.obj"></a-asset-item>
+          <a-asset-item id="schild1-mtl" src="test1.mtl"></a-asset-item>
         </a-assets>
       
-        <a-entity id="car" position="0 2.5 -5" scale="0.01 0.01 0.01" rotation="0 -90 0">
-          <a-obj-model src="#car-obj" mtl="#car-mtl"></a-obj-model>
-          <a-material color="red"></a-material>
+        <a-entity position="0 0 -5" scale="0.1 0.1 0.1" rotation="0 -90 0">
+          <a-obj-model src="#schild1-obj" mtl="#schild1-mtl" shadow="cast: true"></a-obj-model>
+
         </a-entity>
       
         <a-sky color="#87CEEB"></a-sky>
         <a-camera position="0 0 5"></a-camera>
 
         <a-box 
-        position="5 2.5 -5" 
+        position="3 0 -5" 
         height="1.5" 
         width="1.5" 
         depth="1.5" 
@@ -32,6 +32,10 @@
         material="shader: flat; src: #bricks"
         >
       </a-box>
+
+      <a-box position="0 -1 0" height="1" width="100" depth="100" color="gray" shadow="cast: true">
+      </a-box>
+
 
       </a-scene>
 
